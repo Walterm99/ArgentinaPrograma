@@ -1,0 +1,22 @@
+.row{
+    background-color: gray;
+}
+
+.eduT th,td{
+    padding: 15px;
+    text-align: center;
+}
+.eduT table{
+    width: 100%;
+    
+}
+.Educacion h1{
+    text-align: center;
+    
+}
+.Educacion{
+    justify-content: center;
+}
+.fondo{
+    background-color: gray;
+}
