@@ -20,6 +20,42 @@ div{
     height: 40px;
     width: 40px;
 }
+/* Estilos foto de perfil e informacion personal*/
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    
+}
+.datos_personales {
+    justify-content: center;
+
+}
+.datos_personales h1, button{
+    text-decoration: underline;
+    display: inline;
+}
+.Lista{
+    justify-content: center;
+    
+}
+.Lista li{
+    font-size: large;
+    font-weight: 600;
+}
+#botonHide{
+    display: none;
+}
+#Lista{
+    display:none;
+}
+.acercade{
+    justify-content: center;
+}
+.acercade h1{
+   text-decoration: underline;
+   display: block;
+}
 
 /* Estilos de tablas*/
 .tabla th,td{
@@ -46,19 +82,7 @@ div{
 .tabla tr{
     border: 1.5px solid;
 }
-/* Estilos educación*/
 
-.educacion{
-    justify-content: center;
-}    
-
-.educacion h1,button{
-    text-decoration: underline;
-    display: inline;
-}
-#buttonHideEdu{
-    display: none;
-}
 /* Estilos experiencia laboral*/
 .expLab{
     justify-content: center;    
@@ -70,7 +94,7 @@ div{
 #buttonHideLab{
     display: none;
 }
-/*Estilos de habilidades blands y duras*/
+/*Estilos de habilidades blandas y duras*/
 .hardysoft{
     justify-content: center;
 }
@@ -87,39 +111,12 @@ div{
     justify-content: space-evenly;
     
 }
-.container .Cap p{
-    padding-left: 5px;
-}
 
-/* Estilos foto de perfil e informacion personal*/
-.foto{
-    width: 150px;
-    height: 150px;
-    border-radius: 75%;
-    
-}
-.datos_personales {
-    justify-content: center;
-
-}
-.datos_personales h1, button{
-    text-decoration: underline;
-    display: inline;
-}
-.Lista{
-    justify-content: center;
-    
-}
-.Lista li{
-    font-size: large;
-    font-weight: 600;
-}
-#botonHide{
+#Hys{
     display: none;
 }
-#Lista{
-    display:none;
-}
+
+
 
 /* progres bar*/
 @keyframes growProgressBar {
@@ -134,7 +131,7 @@ div{
   }
   
   div[role="progressbar"] {
-    --size: 12rem;
+    --size: 15rem;
     padding-left: 55px;
     --fg: rgb(10, 10, 10);
     --bg: rgb(134, 130, 130);
@@ -143,7 +140,7 @@ div{
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
-    display: flex;
+    display: block;
     place-items: center;
     background: 
       radial-gradient(closest-side, rgb(134, 130, 130) 80%, transparent 0 99.9%, white 0),
@@ -161,5 +158,5 @@ div{
   }
 
 
-  /*Rpueba circle progress*/
+
  

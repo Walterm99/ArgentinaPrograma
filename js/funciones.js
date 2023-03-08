@@ -8,8 +8,8 @@ document.getElementById('botonHide').addEventListener("click",()=>ocultardatos(m
 document.getElementById('mostrarBoton').addEventListener("click",()=>mostrardatos(mostrarBoton,botonHide,Lista))
 document.getElementById('mostrarBotonLab').addEventListener("click",()=>mostrardatos(mostrarBotonLab,buttonHideLab,tablaLab))
 document.getElementById('buttonHideLab').addEventListener("click",()=>ocultardatos(mostrarBotonLab,buttonHideLab,tablaLab))
-
-
+document.getElementById('mostrarBotonhys').addEventListener("click",()=>mostrardatos(mostrarBotonhys,buttonHidehys,Hys))
+document.getElementById('buttonHidehys').addEventListener("click",()=>ocultardatos(mostrarBotonhys,buttonHidehys,Hys))
     
  function mostrardatos(show,hide,dato){
     
