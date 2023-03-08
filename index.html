@@ -10,23 +10,42 @@
     
 </head>
 <body class="fondo">
+    <div class="row ">
+        <div class="col-xs-12 col-md-4 col-lg-4 ">
+            <img src="Assets/fotoperfil/fotoperfil.jpg" alt="" id="fotoPerfil" class="foto">
+        </div>
+        
+    </div>
     <div class="row">
-        <div class="col-xs-12 col-md-4 col-lg-4">
-            <img src="" alt="" id="fotoPerfil">
+        <div class="col-xs-12 col-md-12 col-lg-12 datos_personales">
+            <h1>Datos Personales</h1>
+            <button class="boton" type="button" id="mostrarBoton"><img src="Assets/Icons/flecha-hacia-abajo.png" alt="" class="img"></button>
+            <button class="boton" type="button" id="botonHide"><img src="Assets/Icons/flecha-hacia-arriba.png" alt="" class="img"></button>     
         </div>
-        <div class="col-xs-12 col-md-4 col-lg-4">
-            <p> nombre y apellido</p>
-
-        </div>
-        <div class="col-xs-12 col-md-4 col-lg-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam non at corporis assumenda a blanditiis cupiditate, rerum provident! Excepturi hic magnam provident reiciendis pariatur, fugiat numquam soluta dolorem minus!</p>
+        <div class="col-xs-12 col-md-4 col-lg-12 Lista"id="Lista">
+            <ul  >
+                <li>Nombre &nbsp; Walter Moya</li>
+                <li>Edad: &nbsp; 33</li>
+                <li>Télefono: &nbsp; 3813196550 &nbsp; <img class="img" src="Assets/Icons/llamada-telefonica.png" alt=""></li>
+                <li>GitHub: &nbsp; <a href="https://github.com"><img src="Assets/Icons/github.png" alt="" class="img"></a></li>
+                <li>Linkdn: &nbsp; <a href="https://www.linkedin.com/in/walter-moya-6bbb6819b/"><img src="Assets/Icons/linkedin.png" alt="" class="img
+                    "></a></li>
+                <li>Correo Electrónico: &nbsp; wmoya.989@gmail.com &nbsp; <img class="img
+                    " src="Assets/Icons/correo.png" alt=""></li>
+            </ul>
         </div>
     </div>
     <br>
     <div class="row">
-        <div class="col-xs-12 col-md-4 col-lg-12  Educacion">
+        <div class="col-xs-12 col-md-12 col-lg-12  educacion">
             <h1>Educacion</h1>
-            <table class="eduT">
+            <button class="boton" type="button" id="mostrarBotonEdu"><img src="Assets/Icons/flecha-hacia-abajo.png" alt="" class="img
+                "></button>
+            <button class="boton" type="button" id="buttonHideEdu"><img src="Assets/Icons/flecha-hacia-arriba.png" alt="" class="img"></button>
+            
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-12 tabla" id="tablaEdu">
+            <table >
                 <tr>
                     <th>Año</th>
                     <th>Institución</th>
@@ -34,14 +53,88 @@
                     <th>Estado</th>
                 </tr>
                 <tr>
+                    <td>2023</td>
+                    <td>Argentina Programa</td>
+                    <td>Desarrollador FrontEnd</td>
+                    <td>Finalizado</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Vortex</td>
+                    <td>Curso Ios</td>
+                    <td>Finalizado</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>CoderHouse</td>
+                    <td>Curso de Desarrollador Web</td>
+                    <td>Finalizado</td>
+                </tr>
+                <tr>
+                    <td>2002-2007</td>
+                    <td>Instituto Herman Hollertih</td>
+                    <td>Secundario</td>
+                    <td>Finalizado</td>
+                </tr>
+                <tr>
                     <td>1997-2001</td>
                     <td>Instituto Herman Hollertih</td>
                     <td>Primaria</td>
                     <td>Finalizado</td>
                 </tr>
+              
             </table>
         </div>
     </div>
-    
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12  expLab">
+            <h1>Experiencia Laboral</h1>
+            <button class="boton"type="button" id="mostrarBotonLab"><img src="Assets/Icons/flecha-hacia-abajo.png" alt="" class="img"></button>
+            <button class="boton" type="button" id="buttonHideLab"><img src="Assets/Icons/flecha-hacia-arriba.png" alt="" class="img
+                "></button>
+            
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12 tabla "id="tablaLab">
+            <table >
+                <tr>
+                    <th>Año</th>
+                    <th>Institución</th>
+                    <th>Puesto</th>
+                    
+                </tr>
+                <tr>
+                    <td>2021-2022</td>
+                    <td>Atento</td>
+                    <td>Asesor Telefónico</td>                   
+                </tr>
+                <tr>
+                    <td>2018-2019</td>
+                    <td>One Express</td>
+                    <td>Encargado</td>
+                    
+                </tr>              
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12 hardysoft" >
+                <h1>Hard y soft skils</h1>
+                <button class="boton"type="button" id="mostrarBotonhys"><img src="Assets/Icons/flecha-hacia-abajo.png" alt="" class="img"></button>
+                <button class="boton" type="button" id="buttonHidehys"><img src="Assets/Icons/flecha-hacia-arriba.png" alt="" class="img
+                    "></button>
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-12 container"id="Hys">
+                <div id="cap"class="Cap"role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="--value:65">
+                        <p>HTML</p>    
+                </div>
+                <div id="cap"class="Cap" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="--value:70">
+                             <P>CSS</P>
+                </div>
+                <div  id="cap"class="Cap" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="--value:50">
+                           <P>GitHub</P>
+                </div>
+                
+                
+            </div>
+    <script src="js/funciones.js"></script>
 </body>
 </html>

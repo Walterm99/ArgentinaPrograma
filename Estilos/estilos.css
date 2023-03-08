@@ -1,22 +1,165 @@
+/* Estilos para el fondo de la página*/
 .row{
     background-color: gray;
-}
-
-.eduT th,td{
-    padding: 15px;
-    text-align: center;
-}
-.eduT table{
-    width: 100%;
-    
-}
-.Educacion h1{
-    text-align: center;
-    
-}
-.Educacion{
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 .fondo{
     background-color: gray;
 }
+div{
+    display: flex;
+    padding: 25px;
+}
+.img{
+    height: 20px;
+    width: 20px;
+}
+.boton{
+    background-color: gray;
+    height: 40px;
+    width: 40px;
+}
+
+/* Estilos de tablas*/
+.tabla th,td{
+    padding: 15px;
+    text-align: center;
+}
+.tabla table{
+    width: 100%;
+    
+}
+.tabla{
+    justify-content: center;
+    
+}
+#tablaEdu{
+    display: none;
+}
+#tablaExpLab{
+    display:none;
+}
+.tabla  td, th{
+    border: 1.5px solid;
+}
+.tabla tr{
+    border: 1.5px solid;
+}
+/* Estilos educación*/
+
+.educacion{
+    justify-content: center;
+}    
+
+.educacion h1,button{
+    text-decoration: underline;
+    display: inline;
+}
+#buttonHideEdu{
+    display: none;
+}
+/* Estilos experiencia laboral*/
+.expLab{
+    justify-content: center;    
+}
+.expLab h1,button{
+    text-decoration: underline;
+    display: inline;
+}
+#buttonHideLab{
+    display: none;
+}
+/*Estilos de habilidades blands y duras*/
+.hardysoft{
+    justify-content: center;
+}
+.hardysoft h1,button{
+    text-decoration: underline;
+    display: inline;
+    
+}
+#buttonHidehys{
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.container .Cap p{
+    padding-left: 5px;
+}
+
+/* Estilos foto de perfil e informacion personal*/
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 75%;
+    
+}
+.datos_personales {
+    justify-content: center;
+
+}
+.datos_personales h1, button{
+    text-decoration: underline;
+    display: inline;
+}
+.Lista{
+    justify-content: center;
+    
+}
+.Lista li{
+    font-size: large;
+    font-weight: 600;
+}
+#botonHide{
+    display: none;
+}
+#Lista{
+    display:none;
+}
+
+/* progres bar*/
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  div[role="progressbar"] {
+    --size: 12rem;
+    padding-left: 55px;
+    --fg: rgb(10, 10, 10);
+    --bg: rgb(134, 130, 130);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: flex;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, rgb(134, 130, 130) 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+  }
+  
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    
+    content: counter(percentage) '%'
+  }
+
+
+  /*Rpueba circle progress*/
+ 
